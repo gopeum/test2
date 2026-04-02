@@ -23,7 +23,7 @@ variable "db_subnets" {
 }
 
 variable "eks_cluster_version" {
-  default = "1.28"
+  default = "1.32"
 }
 
 variable "db_user" {

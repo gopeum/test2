@@ -1,0 +1,3 @@
+project = "test2"
+bucket_name = "test2-soldesk803-2026-unique"
+eks_cluster_version = "1.32"

@@ -76,7 +76,7 @@ resource "aws_eks_node_group" "web" {
   node_group_name = "${var.project_name}-web"
   node_role_arn   = aws_iam_role.node_role.arn
   subnet_ids      = var.private_subnet_ids
-  ami_type = "AL2_x86_64"
+  ami_type = "AL2023_x86_64_STANDARD"
 
   instance_types = [var.node_instance_type]
 
@@ -103,7 +103,7 @@ resource "aws_eks_node_group" "was" {
   node_group_name = "${var.project_name}-was"
   node_role_arn   = aws_iam_role.node_role.arn
   subnet_ids      = var.private_subnet_ids
-  ami_type = "AL2_x86_64"
+  ami_type = "AL2023_x86_64_STANDARD"
 
   instance_types = [var.node_instance_type]
 
