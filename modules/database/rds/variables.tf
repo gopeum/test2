@@ -1,3 +1,7 @@
+variable "project" {
+  type = string
+}
+
 variable "subnet_ids" {
   type = list(string)
 }
@@ -8,15 +12,10 @@ variable "db_user" {
 }
 
 variable "db_pass" {
-  type        = string
-  sensitive   = true
-  description = "DB password"
+  type      = string
+  sensitive = true
 }
 
-variable "vpc_id" {
-  type = string
-}
-
-variable "eks_sg_id" {
+variable "rds_sg_id" {
   type = string
 }
