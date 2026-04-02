@@ -10,3 +10,6 @@ override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
+test2.git
+test2.git.bfg-report/
+bfg.jar
